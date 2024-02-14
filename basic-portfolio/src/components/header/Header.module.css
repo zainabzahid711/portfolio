@@ -1,0 +1,51 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: rgb(21, 22, 21);
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.leftContent {
+  flex: 0 0 50%;
+  font-size: 15px;
+}
+
+.rightContent {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  gap: 40px;
+}
+
+.rightItems {
+  cursor: pointer;
+  gap: 40px;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.rightBtn {
+  border-radius: 30px;
+  width: 50%;
+  height: 20px;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(172, 167, 167);
+  border: none;
+}
+
+.rightBtn:hover {
+  padding: 25px 15px;
+  color: white;
+  background-color: rgb(95, 95, 94);
+}
