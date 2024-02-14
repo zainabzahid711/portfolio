@@ -1,12 +1,12 @@
 .sideBar {
-  position: fixed;
-  top: 50px;
+  position: absolute;
+  top: 25%;
   left: 80px;
   z-index: 1;
   background-color: rgb(21, 22, 21);
   color: white;
   width: 250px;
-  height: calc(100vh - 50px);
+  height: calc(90vh - 10px);
   border-radius: 20px;
   padding: 30px;
   display: flex;
@@ -27,6 +27,7 @@
 }
 
 .contactLinks {
+  cursor: pointer;
   margin-top: 30px;
   align-items: center;
   justify-content: center;
@@ -45,7 +46,7 @@
 .genInfo {
   font-size: 15px;
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 
 .detailInfo {
