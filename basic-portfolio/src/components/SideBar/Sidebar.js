@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import style from "./Sidebar.module.css";
 import LinkdinLogo from "../../assets/svg/icons8-linkedin.svg";
 import twitterLogo from "../../assets/svg/icons8-twitter.svg";
@@ -18,10 +18,32 @@ function Sidebar() {
   //   }, 2000);
   //   return () => clearInterval(intervalID);
   // }, []);
+  const [sidebarFixed, setSidebarFixed] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY >= 100) {
+        setSidebarFixed(true);
+      } else {
+        setSidebarFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <div className={style.sideBar}>
+      <div
+        className={style.sideBar}
+        style={{ position: sidebarFixed ? "fixed" : "absolute" }}
+      >
         <h1 className={style.headingName}>ZAINAB ZAHID</h1>
         {/* <p className={style.changingText}>{Text[index]}</p> */}
         <div className={style.contactLinks}>

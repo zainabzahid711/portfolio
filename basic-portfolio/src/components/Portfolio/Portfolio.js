@@ -4,6 +4,7 @@ import Sidebar from "../SideBar/Sidebar";
 import Header from "../header/Header";
 import BgImage from "../bgImage/BgImage";
 import Description from "../Description/Description";
+import Services from "../Services/Services";
 
 function Portfolio() {
   return (
@@ -12,6 +13,7 @@ function Portfolio() {
       <BgImage />
       <Sidebar />
       <Description />
+      <Services />
     </div>
   );
 }
