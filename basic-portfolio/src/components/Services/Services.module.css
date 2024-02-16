@@ -1,0 +1,34 @@
+.mainServices {
+  position: absolute;
+  top: 150%;
+  left: 30%;
+}
+
+.ServiceHeading {
+  color: white;
+}
+
+.subServic {
+  background-color: #00283a;
+  width: 40%;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.subserHeading {
+  font-size: 18px;
+}
+
+.mainTextservice {
+  margin: 50px 0 50px 20px;
+  height: 13px;
+  border-bottom: dotted 2px rgba(225, 225, 235, 0.15);
+  width: 90%;
+}
+
+.subServ2 {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
