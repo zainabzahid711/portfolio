@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Header.module.css";
 
-function Header() {
+function Header({ toggleResume, toggleHome }) {
   return (
     <>
       <div className={style.Header}>
@@ -10,8 +10,13 @@ function Header() {
         </div>
         <div className={style.rightContent}>
           <ul className={style.rightItems}>
-            <li> Home </li>
-            <li> Resume </li>
+            <li onClick={toggleHome}>
+              <a href="#Home"> Home </a>
+            </li>
+            <li>
+              <a href="#Services">Services</a>
+            </li>
+            <li onClick={toggleResume}> Resume </li>
             <li> Experiance </li>
             <li> Contact </li>
           </ul>

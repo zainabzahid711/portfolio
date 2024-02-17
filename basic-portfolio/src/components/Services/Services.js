@@ -3,7 +3,7 @@ import style from "./Services.module.css";
 
 function Services() {
   return (
-    <div className={style.mainServices}>
+    <div id="Services" className={style.mainServices}>
       <div className={style.mainTextservice}>
         <h3 className={style.ServiceHeading}> Services </h3>
       </div>

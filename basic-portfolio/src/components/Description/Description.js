@@ -19,7 +19,12 @@ function Description() {
         <div className={style.footerinisde}>
           <div className={style.footerContent}>
             <p className={style.ftrText}> © 2024 ALL RIGHTS RESERVED. </p>
-            <p className={style.ftrText}> DEVELOPED BY: BSLTHEMES </p>
+            <p className={style.ftrText}>
+              DEVELOPED BY:
+              <a href="https://themeforest.net/user/bslthemes" target="_blank">
+                <span> BSLTHEMES </span>
+              </a>
+            </p>
           </div>
         </div>
       </div>

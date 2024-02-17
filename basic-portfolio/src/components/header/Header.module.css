@@ -1,3 +1,13 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(77, 72, 72);
+}
+
+
 .Header {
   position: fixed;
   top: 20px;
@@ -15,8 +25,12 @@
 
 .leftContent {
   margin-left: 50px;
-  flex: 0 0 50%;
+  flex: 0 0 35%;
   font-size: 15px;
+}
+
+li {
+  letter-spacing: 2px;
 }
 
 .rightContent {

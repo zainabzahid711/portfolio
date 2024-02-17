@@ -53,3 +53,8 @@
   font-size: 14px;
   opacity: .5;
 }
+
+a:active {
+  color: white;
+  opacity: .7;
+}
