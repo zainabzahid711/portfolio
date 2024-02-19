@@ -6,13 +6,19 @@ import BgImage from "../bgImage/BgImage";
 import Description from "../Description/Description";
 import Services from "../Services/Services";
 import Resume from "../Resume/Resume";
+import Contact from "../Contact/Contact";
 
 function Portfolio() {
   const [isResumeOpen, setResumeOpen] = useState(false);
   const [isHomeOpen, setHomeOpen] = useState(true);
+  const [isContactOpen, setContactOpen] = useState(false);
 
   const toggleResume = () => {
     setResumeOpen(!isResumeOpen);
+  };
+
+  const toggleContact = () => {
+    setContactOpen(!isContactOpen);
   };
 
   const toggleHome = () => {
@@ -21,8 +27,12 @@ function Portfolio() {
   };
   return (
     <div className={style.Portfolio}>
-      <Header toggleResume={toggleResume} toggleHome={toggleHome} />
-      {!isResumeOpen && isHomeOpen && (
+      <Header
+        toggleResume={toggleResume}
+        toggleHome={toggleHome}
+        toggleContact={toggleContact}
+      />
+      {!isResumeOpen && !isContactOpen && isHomeOpen && (
         <>
           <BgImage mainText="Decoding the Digital World: Revealing the Art of Coding" />
           <Sidebar />
@@ -30,7 +40,8 @@ function Portfolio() {
           <Services />
         </>
       )}
-      {isResumeOpen && <Resume />}
+      {isResumeOpen && !isContactOpen && <Resume />}
+      {isContactOpen && <Contact />}
     </div>
   );
 }

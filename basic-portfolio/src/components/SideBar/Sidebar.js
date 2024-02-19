@@ -10,40 +10,18 @@ function Sidebar() {
     "I'M A UI/UX DESIGNER.",
     "I'M A DREAMER :) ",
   ];
-  // const [index, setIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const intervalID = setInterval(() => {
-  //     setIndex((prevIndex) => (prevIndex + 1) % Text.length);
-  //   }, 2000);
-  //   return () => clearInterval(intervalID);
-  // }, []);
-  const [sidebarFixed, setSidebarFixed] = useState(true);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-
-      if (scrollY >= 100) {
-        setSidebarFixed(true);
-      } else {
-        setSidebarFixed(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    const intervalID = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % Text.length);
+    }, 2000);
+    return () => clearInterval(intervalID);
   }, []);
 
   return (
     <>
-      <div
-        className={style.sideBar}
-        style={{ position: sidebarFixed ? "fixed" : "absolute" }}
-      >
+      <div className={style.sideBar}>
         <h1 className={style.headingName}>ZAINAB ZAHID</h1>
         {/* <p className={style.changingText}>{Text[index]}</p> */}
         <div className={style.contactLinks}>

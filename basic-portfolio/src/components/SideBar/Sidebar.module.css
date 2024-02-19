@@ -1,6 +1,6 @@
 .sideBar {
-  position: absolute;
-  top: 25%;
+  position: fixed;
+  top: 20%;
   left: 80px;
   z-index: 1;
   /* background-color: rgb(21, 22, 21); */
