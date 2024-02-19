@@ -1,0 +1,145 @@
+.contact {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+}
+
+.contactInside {
+  display: flex;
+  gap: 80px;
+}
+
+.contactVia {
+  background-color: #00283a;
+  border-radius: 20px;
+  padding: 70px 90px 20px 30px;
+  color: white;
+}
+
+.contHeading {
+  font-size: 18px;
+}
+
+.contPara {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  opacity: .6;
+  gap: 20px;
+}
+
+.contactSec {
+  position: absolute;
+  /* padding: 70px 90px 20px 30px; */
+  color: white;
+  top: 120%;
+}
+
+.getInTouch {
+  color: white;
+  position: relative;
+}
+
+.contText {
+  margin-bottom: 50px;
+  margin-left: 20px;
+  height: 13px;
+  border-bottom: dotted 2px rgba(225, 225, 235, 0.15);
+  width: 90%;
+}
+
+.contactDet {
+  background-color: #00283a;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.inputCont {
+  width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 40px;
+  outline: none;
+  background-color: #02162b;
+  color: aliceblue;
+}
+
+.inputmsg {
+  width: 90%;
+  padding: 20px 20px 90px;
+  background-color: #02162b;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-top: 40px;
+  color: aliceblue;
+}
+
+.btnDiv {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contBtn {
+  cursor: pointer;
+  padding: 10px;
+  width: 90px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(162, 167, 170);
+}
+
+.contBtn:hover {
+  background-color: rgb(218, 213, 174);
+  width: 95px;
+  color: rgb(56, 54, 52);
+}
+
+.arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  transform: translateX(5px);
+}
+
+.spanEle {
+  opacity: .5;
+  font-size: 13px;
+}
+
+
+/* -------footer--------- */
+.Footer {
+  position: absolute;
+  top: 385%;
+  width: 100%;
+}
+
+.footerinisde {
+  border-top: 2px dotted rgba(225, 225, 235, 0.15);
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footerContent {
+  background-color: #00283a;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.ftrText {
+  font-size: 14px;
+  opacity: .5;
+}
+
+a:active {
+  color: white;
+  opacity: .7;
+}
