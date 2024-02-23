@@ -1,0 +1,157 @@
+.NavBar {
+  background-color: #00283a;
+  position: sticky;
+  border-radius: 20px;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 10;
+}
+
+.logo {
+  width: 20px;
+}
+
+.leftContent {
+  display: flex;
+  color: aliceblue;
+}
+
+.rightContent {
+  display: flex;
+  align-items: center;
+}
+
+.rightContentActive {
+  display: flex;
+  align-items: center;
+}
+
+.rightItems {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 15px;
+  color: antiquewhite;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.rightItems li:hover {
+  color: #739710;
+}
+
+.rightItems li a:hover::after {
+  background-color: #739710;
+  content: "";
+  width: 10%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 30px;
+}
+
+.rightBtn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #739710;
+}
+
+.rightBtn:hover {
+  background-color: #568d0f;
+}
+
+.responsive {
+  display: none;
+}
+
+#bar {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .rightBtn {
+    padding: 12px;
+    display: flex;
+  }
+
+  .rightItems {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+
+  .rightBtn {
+    padding: 10px;
+  }
+
+  .rightItems {
+    font-size: 12px;
+    gap: 8px;
+    margin-right: 10px;
+  }
+
+  .mainHeading {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+
+  .rightContent {
+    display: none;
+  }
+
+  .rightContentActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    height: 75vh;
+    max-width: 100%;
+    width: 250px;
+    padding: 50px;
+    display: block;
+    background-color: #00283a;
+    border-radius: 20px;
+  }
+
+  .rightItems {
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .rightBtn {
+    font-size: 16px;
+    color: wheat;
+  }
+
+  .rightItems li {
+    cursor: pointer;
+  }
+
+  #bar {
+    display: block;
+  }
+
+  .responsive {
+    display: block;
+    color: whitesmoke;
+  }
+
+}
