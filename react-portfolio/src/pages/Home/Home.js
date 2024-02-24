@@ -1,10 +1,13 @@
 import React from "react";
-import NavBar from "../../components/navbar/NavBar";
+import HeroSec from "../../components/HeroSection/HeroSec";
+import style from "./Home.module.css";
 
 function Home() {
   return (
     <>
-      <NavBar />
+      <div className={style.HomePage}>
+        <HeroSec />
+      </div>
     </>
   );
 }

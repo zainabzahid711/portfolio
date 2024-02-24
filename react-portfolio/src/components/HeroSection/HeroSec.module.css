@@ -1,0 +1,86 @@
+.HeroSec {
+  margin: 0 auto;
+}
+
+.BgImage {
+  position: relative;
+  width: 100%;
+  border-radius: 40px;
+  background-image: url(../../assets/png/desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+
+.textArea {
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: rgb(236, 233, 226);
+  font-weight: 800;
+}
+
+
+.HeroSpan {
+  width: 40%;
+}
+
+.HeroHead {
+  font-size: 45px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .textArea {
+    left: 65%;
+  }
+
+  .HeroHead {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+
+  .textArea {
+    left: 75%;
+  }
+
+  .HeroHead {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .textArea {
+    top: 45%;
+    left: 50%;
+  }
+
+  .HeroHead {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+
+  .textArea {
+    top: 55%;
+    left: 55%;
+    width: 90%;
+  }
+
+  .HeroHead {
+    font-size: 25px;
+  }
+}

@@ -1,11 +1,15 @@
 .NavBar {
   background-color: #00283a;
-  position: sticky;
+  position: fixed;
+  float: left;
+  left: 0;
+  right: 0;
   border-radius: 20px;
   display: flex;
   max-width: 100%;
   justify-content: space-between;
   padding: 20px;
+  margin: 0 10px 0 10px;
   z-index: 10;
 }
 
