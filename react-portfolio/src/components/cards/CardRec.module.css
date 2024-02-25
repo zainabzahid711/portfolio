@@ -1,0 +1,89 @@
+.cardrectangle {
+  background-color: #00283a;
+  padding: 40px;
+  /* width: 50%; */
+  color: white;
+  border-radius: 20px;
+  position: relative;
+  /* left: 35%; */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cardrecText::before {
+  content: "\0022";
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  font-size: 45px;
+  color: #bbc032;
+  font-family: sans-serif;
+
+  line-height: 1;
+  z-index: 1;
+}
+
+.cardrecText::after {
+  content: "\0022";
+  position: absolute;
+  top: 60%;
+  left: 92%;
+  font-size: 45px;
+  color: #bbc032;
+  font-family: sans-serif;
+
+  line-height: 1;
+  z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .cardrectangle {
+    font-size: 15px;
+    padding: 35px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cardrectangle {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cardrectangle {
+    padding: 30px;
+  }
+}
+
+
+/* --------square card-------- */
+.CardSquare {
+  background-color: #00283a;
+  width: 40%;
+  border-radius: 20px;
+  padding: 60px 40px 40px 40px;
+  color: white;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.subtitle {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .CardSquare {
+    width: 40%;
+    padding: 50px 30px 30px 30px;
+    color: white;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .CardSquare {
+    width: 90%;
+  }
+}

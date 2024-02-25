@@ -3,6 +3,8 @@
 }
 
 .BgImage {
+  margin: 5px;
+  padding: 1px;
   position: relative;
   width: 100%;
   border-radius: 40px;
@@ -10,6 +12,7 @@
   background-size: cover;
   background-position: center;
   height: 650px;
+  opacity: .6;
 }
 
 
@@ -17,7 +20,7 @@
   width: 50%;
   margin: 0 auto;
   position: absolute;
-  top: 65%;
+  top: 20%;
   left: 60%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -38,7 +41,7 @@
 @media screen and (max-width: 1200px) {
 
   .textArea {
-    left: 65%;
+    left: 70%;
   }
 
   .HeroHead {
@@ -50,6 +53,7 @@
 
 
   .textArea {
+    top: 20%;
     left: 75%;
   }
 
@@ -62,8 +66,9 @@
 
 
   .textArea {
-    top: 45%;
-    left: 50%;
+    top: 15%;
+    left: 48%;
+    width: 60%;
   }
 
   .HeroHead {
@@ -75,12 +80,19 @@
 
 
   .textArea {
-    top: 55%;
-    left: 55%;
+    top: 15%;
+    left: 58%;
     width: 90%;
   }
 
   .HeroHead {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .textArea {
+    top: 10%;
+    left: 58%;
   }
 }

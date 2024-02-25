@@ -1,3 +1,61 @@
 .HomePage {
   position: relative;
 }
+
+.heading {
+  color: white;
+  margin-bottom: 30px;
+  height: 20px;
+  border-bottom: dotted 2px rgba(225, 225, 235, 0.15);
+  font-size: 25px;
+}
+
+.desption {
+  position: relative;
+  width: 60%;
+  left: 35%;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .desption {
+    position: relative;
+    width: 50%;
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .desption {
+    position: relative;
+    width: 45%;
+    left: 50%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .desption {
+    position: relative;
+    width: 78%;
+    left: 15%;
+    margin-top: 30%;
+
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .desption {
+    width: 85%;
+    left: 10%;
+    margin-top: 75%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .desption {
+    margin-top: 58%;
+  }
+}

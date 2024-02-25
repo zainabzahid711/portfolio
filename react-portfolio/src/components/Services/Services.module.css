@@ -1,0 +1,81 @@
+.mainServices {
+  position: relative;
+  left: 35%;
+  width: 60%;
+  z-index: 4;
+}
+
+.ServiceHeading {
+  color: white;
+  font-size: 25px;
+}
+
+.subServic {
+  background-color: #00283a;
+  /* width: 40%; */
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.subserHeading {
+  font-size: 18px;
+}
+
+.mainTextservice {
+  margin: 50px 0 50px 20px;
+  height: 20px;
+  border-bottom: dotted 2px rgba(225, 225, 235, 0.15);
+  width: 95%;
+}
+
+.subService {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .mainServices {
+    left: 45%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainServices {
+    left: 50%;
+    width: 45%;
+  }
+
+  .subService {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .mainServices {
+    left: 15%;
+    width: 78%;
+  }
+
+  .subService {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .mainServices {
+    left: 10%;
+    width: 78%;
+  }
+
+}

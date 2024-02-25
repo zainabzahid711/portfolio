@@ -1,0 +1,80 @@
+.Footer {
+  position: relative;
+  width: 60%;
+  left: 35%;
+}
+
+.footerinisde {
+  border-top: 2px dotted rgba(225, 225, 235, 0.15);
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footerContent {
+  background-color: #00283a;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.ftrText {
+  font-size: 14px;
+  color: white;
+  opacity: .5;
+}
+
+.ftrText a {
+  color: wheat;
+  text-decoration: none;
+  opacity: .7;
+}
+
+a:hover {
+  color: rgb(219, 223, 30);
+  text-decoration: underline;
+}
+
+a:active {
+  color: #bbc032;
+  opacity: .7;
+}
+
+@media screen and (max-width: 1200px) {
+  .Footer {
+    position: relative;
+    width: 50%;
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Footer {
+    position: relative;
+    width: 45%;
+    left: 50%;
+  }
+
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    width: 78%;
+    left: 15%;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .Footer {
+    left: 10%;
+    width: 80%;
+  }
+
+}
