@@ -1,5 +1,6 @@
 .NavBar {
   background-color: #00283a;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
   position: fixed;
   float: left;
   left: 0;
@@ -8,7 +9,7 @@
   display: flex;
   max-width: 100%;
   justify-content: space-between;
-  padding: 20px;
+  padding: 8px;
   margin: 0 10px 0 10px;
   z-index: 10;
 }
@@ -20,11 +21,13 @@
 .leftContent {
   display: flex;
   color: aliceblue;
+  margin-left: 80px;
 }
 
 .rightContent {
   display: flex;
   align-items: center;
+  margin-right: 90px;
 }
 
 .rightContentActive {
@@ -43,10 +46,19 @@
   position: relative;
 }
 
-.rightItems li:hover {
-  color: #739710;
+.rightItems li {
+  text-decoration: none;
+  color: #f3eeee;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.6s;
 }
 
+.rightItems li:hover {
+  color: #59682f;
+}
+
+/* 
 .rightItems li a:hover::after {
   background-color: #739710;
   content: "";
@@ -55,7 +67,7 @@
   position: absolute;
   bottom: -5px;
   left: 30px;
-}
+} */
 
 .rightBtn {
   font-size: 12px;
@@ -108,7 +120,7 @@
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
 
 
   .rightContent {
@@ -154,8 +166,17 @@
   }
 
   .responsive {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     display: block;
     color: whitesmoke;
+  }
+
+  .fas fa-times {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }

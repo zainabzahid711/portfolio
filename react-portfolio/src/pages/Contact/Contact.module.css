@@ -1,0 +1,49 @@
+.ContactCards {
+  position: relative;
+  margin-top: -5%;
+  left: 35%;
+  display: flex;
+  gap: 60px;
+  width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .ContactCards {
+    left: 43%;
+    gap: 45px;
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .ContactCards {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    gap: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .ContactCards {
+    display: flex;
+    flex-direction: column;
+    left: 15%;
+    gap: 45px;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+  .ContactCards {
+    display: flex;
+    flex-direction: column;
+    left: 15%;
+    gap: 45px;
+    margin-top: 55%;
+  }
+}

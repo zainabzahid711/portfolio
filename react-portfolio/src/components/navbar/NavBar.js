@@ -24,12 +24,7 @@ function NavBar() {
           className={showNav ? style.rightContentActive : style.rightContent}
         >
           <ul className={style.rightItems}>
-            <li>
-              <a> Home </a>
-            </li>
-            <li>
-              <a>Services</a>
-            </li>
+            <li>Home</li>
             <li> Resume </li>
             <li> Experiance </li>
             <li> Contact </li>

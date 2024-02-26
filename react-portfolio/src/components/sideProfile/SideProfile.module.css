@@ -4,6 +4,7 @@
   left: 80px;
   z-index: 1;
   background-color: #00283a;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
   color: white;
   width: 250px;
   height: auto;
