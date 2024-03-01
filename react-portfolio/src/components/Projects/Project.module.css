@@ -1,0 +1,49 @@
+.Projects {
+  position: relative;
+  left: 32%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 65%;
+  border-radius: 20px;
+}
+
+.verticalLine {
+  position: relative;
+}
+
+.verticalElement {
+  position: relative;
+  color: white;
+}
+
+.timelineSubtitle {
+  opacity: .6;
+  font-size: 15px;
+}
+
+.date {
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Projects {
+    left: 40%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Projects {
+    left: 50%;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Projects {
+    left: 15%;
+    width: 80%;
+  }
+}

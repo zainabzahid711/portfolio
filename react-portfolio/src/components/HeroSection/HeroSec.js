@@ -4,8 +4,7 @@ import style from "./HeroSec.module.css";
 function HeroSec({ mainText }) {
   return (
     <>
-      <div className={style.HeroSec}>
-        <div className={style.BgImage}></div>
+      <div className={style.BgImage}>
         <div className={style.textArea}>
           <span className={style.HeroSpan}>Hey There!</span>
           <h1 className={style.HeroHead}>{mainText}</h1>

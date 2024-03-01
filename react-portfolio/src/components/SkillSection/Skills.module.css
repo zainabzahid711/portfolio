@@ -1,0 +1,106 @@
+.allSkilss {
+  position: relative;
+  /* top: 20%; */
+  left: 35%;
+  width: 60%;
+}
+
+.langSkills {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.subSkills {
+  gap: 40px;
+}
+
+.proSkills {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .allSkilss {
+    left: 42%;
+    width: 58%;
+  }
+
+  .proSkills {
+    gap: 20px;
+    width: 92%;
+  }
+
+  .langSkills {
+    width: 93%;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .subSkills {
+    width: 60%;
+  }
+
+  .allSkilss {
+    left: 50%;
+    width: 45%;
+  }
+
+  .proSkills {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .langSkills {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subSkills {
+    width: 60%;
+  }
+
+  .allSkilss {
+    left: 15%;
+    width: 85%;
+  }
+
+  .proSkills {
+    width: 95%;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .langSkills {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+
+  .allSkilss {
+    margin-top: 40%;
+    left: 10%;
+    width: 80%;
+  }
+
+  .proSkills {
+    width: 95%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .langSkills {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+}

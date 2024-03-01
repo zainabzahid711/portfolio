@@ -1,13 +1,11 @@
 .cardrectangle {
   background-color: #00283a;
   padding: 40px;
-  /* width: 50%; */
   color: white;
   border-radius: 20px;
   position: relative;
-  /* left: 35%; */
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .cardrecText::before {
@@ -86,4 +84,31 @@
   .CardSquare {
     width: 90%;
   }
+}
+
+
+/* --------skillCard----- */
+
+.langContain {
+  background-color: #00283a;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+
+
+.spanDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.spanElem {
+  font-size: 12px;
+  opacity: .7;
+  font-style: italic;
+  color: #e1e728;
 }
