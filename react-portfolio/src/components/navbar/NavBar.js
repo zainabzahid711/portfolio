@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./NavBar.module.css";
-
+import { Link } from "react-router-dom";
 function NavBar() {
   const [clicked, setClicked] = useState(false);
   const [showNav, setShowNav] = useState(false);
@@ -24,10 +24,18 @@ function NavBar() {
           className={showNav ? style.rightContentActive : style.rightContent}
         >
           <ul className={style.rightItems}>
-            <li>Home</li>
-            <li> Resume </li>
-            <li> Experiance </li>
-            <li> Contact </li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/Resume">
+              <li>Resume</li>
+            </Link>
+            <Link to="/Experience">
+              <li>Experience</li>
+            </Link>
+            <Link to="/Contact">
+              <li>Contact</li>
+            </Link>
           </ul>
           <button className={style.rightBtn}> Download The CV </button>
         </div>
