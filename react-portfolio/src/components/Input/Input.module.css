@@ -19,3 +19,8 @@
   margin-top: 40px;
   color: aliceblue;
 }
+.invalid{
+  border: 2px solid red;
+  color: rgb(126, 118, 118);
+  background-color: rgb(110, 77, 77);
+}

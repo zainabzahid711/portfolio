@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import style from "./Services.module.css";
 import CardSquare from "../cards/CardSquare";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Services() {
+  const [aosInitialize, setInitialize] = useState(false);
+  useEffect(() => {
+    if (!aosInitialize) {
+      AOS.init();
+      setInitialize(true);
+    }
+  }, [aosInitialize]);
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   const dataArry = [
     {
       heading: "UI/UX Design",
@@ -34,7 +46,12 @@ function Services() {
       </div>
       {chunkDataArry.map((chunk, index) => (
         <>
-          <div key={index} className={style.subService}>
+          <div
+            key={index}
+            className={style.subService}
+            data-aos={aosInitialize ? "fade-up" : ""}
+            data-aos-duration="2000"
+          >
             {chunk.map((data, idx) => (
               <CardSquare key={idx} title={data.heading} subTitle={data.para} />
             ))}

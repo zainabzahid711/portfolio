@@ -9,7 +9,10 @@ function Home() {
   return (
     <>
       <div className={style.HomePage}>
-        <HeroSec mainText=" Decoding the Digital Universe: Discover my space!" />
+        <HeroSec
+          spanText={"Hey There!"}
+          mainText=" Decoding the Digital Universe: Discover my space!"
+        />
         <div className={style.desption}>
           <h1 className={style.heading}> Description</h1>
           <CardRec

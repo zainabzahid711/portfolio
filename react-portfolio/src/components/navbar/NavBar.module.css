@@ -76,10 +76,19 @@
   border-radius: 30px;
   border: none;
   background-color: #739710;
+  color: white;
 }
 
 .rightBtn:hover {
-  background-color: #568d0f;
+  background-color: #648f2c;
+}
+.rightBtn:visited{
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none !important;
+  color: rgb(41, 40, 40);
 }
 
 .responsive {

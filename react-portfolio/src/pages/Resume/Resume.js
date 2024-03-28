@@ -10,7 +10,10 @@ function Resume() {
   return (
     <>
       {/* <div className={style.Resume}> */}
-      <HeroSec mainText={"Discover my Skills and Project History!"} />
+      <HeroSec
+        spanText={"Resume!"}
+        mainText={"Discover my Skills and Project History!"}
+      />
       <div className={style.ResumeContent}>
         <Skills />
         <Exprties />

@@ -24,7 +24,10 @@ function Contact() {
   ];
   return (
     <div className={style.Contact}>
-      <HeroSec mainText={"Want to Hire! Let's Get In touch!"} />
+      <HeroSec
+        spanText={"Contact me!"}
+        mainText={"Want to Hire! Let's Get In touch!"}
+      />
       <div className={style.ContactCards}>
         {arry.map((item, index) => (
           <ContactCard

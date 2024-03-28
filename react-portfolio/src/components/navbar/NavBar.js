@@ -25,19 +25,31 @@ function NavBar() {
         >
           <ul className={style.rightItems}>
             <Link to="/">
-              <li>Home</li>
+              <li>
+                <a>Home</a>
+              </li>
             </Link>
             <Link to="/Resume">
-              <li>Resume</li>
+              <li>
+                <a>Resume</a>
+              </li>
             </Link>
             <Link to="/Experience">
-              <li>Experience</li>
+              <li>
+                <a>Experience</a>
+              </li>
             </Link>
             <Link to="/Contact">
-              <li>Contact</li>
+              <li>
+                <a>Contact</a>
+              </li>
             </Link>
           </ul>
-          <button className={style.rightBtn}> Download The CV </button>
+          <button className={style.rightBtn}>
+            <a href="https://app.flowcv.com/resume/content" target="_blank">
+              Download the CV
+            </a>
+          </button>
         </div>
 
         <div id="bar" className={style.responsive}>

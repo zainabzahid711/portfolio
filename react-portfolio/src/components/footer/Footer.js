@@ -11,6 +11,10 @@ function Footer() {
       setInitialize(true);
     }
   }, [aosInitialize]);
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
     <>
       <div className={style.Footer}>

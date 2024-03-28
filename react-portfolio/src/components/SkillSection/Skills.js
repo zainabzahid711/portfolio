@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import style from "./Skills.module.css";
 import CardSkill from "../cards/CardSkill";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Skills() {
+  const [aosInitialize, setInitialize] = useState(false);
+  useEffect(() => {
+    if (!aosInitialize) {
+      AOS.init();
+      setInitialize(true);
+    }
+  }, [aosInitialize]);
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   const skills = [
     { SkillName: "Urdu", perValue: 100 },
     { SkillName: "English", perValue: 70 },
@@ -23,7 +35,11 @@ function Skills() {
   return (
     <>
       <div className={style.allSkilss}>
-        <div className={style.langSkills}>
+        <div
+          className={style.langSkills}
+          data-aos={aosInitialize ? "fade-up" : ""}
+          data-aos-duration="2000"
+        >
           {skills.map((item, idx) => (
             <CardSkill
               key={idx}
@@ -35,7 +51,12 @@ function Skills() {
         {chunkArray.map((chunk, index) => (
           <>
             {/* <div className={style.subSkills}> */}
-            <div key={index} className={style.proSkills}>
+            <div
+              key={index}
+              className={style.proSkills}
+              data-aos={aosInitialize ? "fade-up" : ""}
+              data-aos-duration="2000"
+            >
               {chunk.map((item, idx) => (
                 <CardSkill
                   key={idx}

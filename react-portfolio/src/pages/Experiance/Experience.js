@@ -8,7 +8,10 @@ import Footer from "../../components/footer/Footer";
 function Experience() {
   return (
     <>
-      <HeroSec mainText=" Discover My Experience! as Projects" />
+      <HeroSec
+        spanText={"Experience!"}
+        mainText=" Discover My Experience! as Projects"
+      />
       <div className={style.desption}>
         <h1 className={style.heading}> Working with Local Clients! </h1>
         <CardRec

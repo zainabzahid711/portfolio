@@ -1,23 +1,16 @@
 import React from "react";
 import style from "./Input.module.css";
-function Input() {
-  const inputData = [
-    { type: "text", placeholder: "Name" },
-    { type: "email", placeholder: "Email" },
-    { type: "text", placeholder: "Message" },
-  ];
-
+function Input({ type, placeholder, invalid, onChange }) {
   return (
     <>
       <div className={style.Input}>
-        {inputData.map((item, index) => (
-          <input
-            className={style.inputCont}
-            key={index}
-            type={item.type}
-            placeholder={item.placeholder}
-          ></input>
-        ))}
+        <input
+          className={`${style.inputCont} ${invalid ? style.invalid : ""}`}
+          onChange={onChange}
+          type={type}
+          placeholder={placeholder}
+          required
+        ></input>
       </div>
     </>
   );

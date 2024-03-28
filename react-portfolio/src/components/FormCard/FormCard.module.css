@@ -46,6 +46,16 @@
   opacity: .5;
   font-size: 13px;
 }
+.textField{
+  width: 90%;
+  padding: 20px 20px 90px;
+  background-color: #02162b;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-top: 40px;
+  color: aliceblue;
+}
 
 @media screen and (max-width: 1200px) {
   .contactDet {
