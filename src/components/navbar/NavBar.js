@@ -25,30 +25,20 @@ function NavBar() {
         >
           <ul className={style.rightItems}>
             <Link to="/">
-              <li>
-                <a>Home</a>
-              </li>
+              <li>Home</li>
             </Link>
             <Link to="/Resume">
-              <li>
-                <a>Resume</a>
-              </li>
+              <li>Resume</li>
             </Link>
             <Link to="/Experience">
-              <li>
-                <a>Experience</a>
-              </li>
+              <li>Experience</li>
             </Link>
             <Link to="/Contact">
-              <li>
-                <a>Contact</a>
-              </li>
+              <li>Contact</li>
             </Link>
           </ul>
           <button className={style.rightBtn}>
-            <a href="https://app.flowcv.com/resume/content" target="_blank">
-              Download the CV
-            </a>
+            <a href="https://app.flowcv.com/resume/content">Download the CV</a>
           </button>
         </div>
 

@@ -1,9 +1,9 @@
 import style from "./ProgressBar.module.css";
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const ProgressBar = ({ value, progress }) => {
-  const calculatedProgress = (progress / 100) * value;
+  // const calculatedProgress = (progress / 100) * value;
   return (
     <div className={style.progressBar}>
       <motion.div

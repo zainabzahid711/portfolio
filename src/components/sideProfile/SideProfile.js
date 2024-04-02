@@ -19,27 +19,24 @@ function SideProfile() {
       setIndex((prevIndex) => (prevIndex + 1) % Text.length);
     }, 2000);
     return () => clearInterval(intervalID);
-  }, []);
+  }, [Text.length]);
 
   return (
     <>
       <div className={style.sideBar}>
         <h1 className={style.headingName}>ZAINAB ZAHID</h1>
-        {/* <p className={style.changingText}>{Text[index]}</p> */}
+        <p className={style.changingText}>{Text[index]}</p>
         <div className={style.contactLinks}>
-          <a href="https://github.com/zainabzahid711" target="_blank">
+          <a href="https://github.com/zainabzahid711">
             <img className={style.logo} src={gitHubLogo} alt="github" />
           </a>
-          <a
-            href="https://www.linkedin.com/in/zainab-zahid-b18428240/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/zainab-zahid-b18428240/">
             <img className={style.logo} src={LinkdinLogo} alt="LinkedIn" />
           </a>
-          <a href="https://twitter.com/ZainabZahid09" target="_blank">
+          <a href="https://twitter.com/ZainabZahid09">
             <img className={style.logo} src={twitterLogo} alt="Twitter" />
           </a>
-          <a href="mailto:zynabzahid877@gmail.com" target="_blank">
+          <a href="mailto:zynabzahid877@gmail.com">
             <img className={style.logo} src={mailLogo} alt="Email" />
           </a>
         </div>
