@@ -14,6 +14,10 @@ function NavBar() {
     setShowNav(!showNav);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <div className={style.NavBar}>
@@ -24,17 +28,41 @@ function NavBar() {
           className={showNav ? style.rightContentActive : style.rightContent}
         >
           <ul className={style.rightItems}>
-            <Link to="/">
-              <li>Home</li>
+            <Link to="/" onClick={scrollToTop}>
+              <li
+                onClick={() => {
+                  HideandShow();
+                }}
+              >
+                Home
+              </li>
             </Link>
-            <Link to="/Resume">
-              <li>Resume</li>
+            <Link to="/Resume" onClick={scrollToTop}>
+              <li
+                onClick={() => {
+                  HideandShow();
+                }}
+              >
+                Resume
+              </li>
             </Link>
-            <Link to="/Experience">
-              <li>Experience</li>
+            <Link to="/Experience" onClick={scrollToTop}>
+              <li
+                onClick={() => {
+                  HideandShow();
+                }}
+              >
+                Experience
+              </li>
             </Link>
-            <Link to="/Contact">
-              <li>Contact</li>
+            <Link to="/Contact" onClick={scrollToTop}>
+              <li
+                onClick={() => {
+                  HideandShow();
+                }}
+              >
+                Contact
+              </li>
             </Link>
           </ul>
           <button className={style.rightBtn}>

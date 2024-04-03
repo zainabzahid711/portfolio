@@ -9,18 +9,16 @@ import Footer from "../../components/footer/Footer";
 function Resume() {
   return (
     <>
-      {/* <div className={style.Resume}> */}
-      <HeroSec
-        spanText={"Resume!"}
-        mainText={"Discover my Skills and Project History!"}
-      />
       <div className={style.ResumeContent}>
+        <HeroSec
+          spanText={"Resume!"}
+          mainText={"Discover my Skills and Project History!"}
+        />
         <Skills />
         <Exprties />
         <Project />
         <Footer />
       </div>
-      {/* </div> */}
     </>
   );
 }

@@ -50,12 +50,12 @@
   .desption {
     width: 85%;
     left: 10%;
-    margin-top: 75%;
+    margin-top: 54%;
   }
 }
 
 @media screen and (max-width: 435px) {
   .desption {
-    margin-top: 58%;
+    margin-top: 42%;
   }
 }

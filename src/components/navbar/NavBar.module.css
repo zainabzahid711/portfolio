@@ -141,7 +141,7 @@ a:visited{
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 90px;
+    top: 75px;
     right: 10px;
     height: 75vh;
     max-width: 100%;
@@ -162,8 +162,13 @@ a:visited{
   }
 
   .rightBtn {
+    margin: 0 auto ;
+    width: 70%;
     font-size: 16px;
     color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .rightItems li {
@@ -175,6 +180,7 @@ a:visited{
   }
 
   .responsive {
+    margin: 20px 20px 0px 0px;
     text-align: center;
     justify-content: center;
     align-items: center;
