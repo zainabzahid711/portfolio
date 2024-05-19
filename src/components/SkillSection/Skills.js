@@ -25,8 +25,8 @@ function Skills() {
     { SkillName: "HTML", perValue: 95 },
     { SkillName: "CSS/SASS", perValue: 95 },
     { SkillName: "BOOTSTRAP", perValue: 50 },
-    { SkillName: "REACT.JS", perValue: 80 },
-    { SkillName: "JAVASCRIPT", perValue: 60 },
+    { SkillName: "REACT.JS", perValue: 50 },
+    { SkillName: "JAVASCRIPT", perValue: 40 },
   ];
   const chunkArray = [];
   for (let i = 0; i < ProSkill.length; i += 2) {
