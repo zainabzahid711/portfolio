@@ -4,8 +4,11 @@ import HeroSec from "../../components/HeroSection/HeroSec";
 import ContactCard from "../../components/contactCards/ContactCard";
 import Footer from "../../components/footer/Footer";
 import FormCard from "../../components/FormCard/FormCard";
+import SideProfile from "../../components/sideProfile/SideProfile";
+import { useMediaQuery } from "@mui/material";
 
 function Contact() {
+  const isMobile = useMediaQuery("(max-width:768px)");
   const arry = [
     {
       name: "Call",
@@ -24,6 +27,7 @@ function Contact() {
   ];
   return (
     <div className={style.Contact}>
+      <SideProfile top={isMobile ? 15 : 20} />
       <HeroSec
         spanText={"Contact me!"}
         mainText={"Want to Hire! Let's Get In touch!"}

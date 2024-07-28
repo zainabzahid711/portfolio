@@ -20,22 +20,26 @@ const ShowCard = styled(Box)(({ theme }) => ({
   maxWidth: "100%",
   display: "flex",
   padding: "24px 0px 24px 0px",
+  width: "100%",
+  left: "30%",
   position: "relative",
-  width: "60%",
-  maxWidth: "100%",
-  position: "relative",
-  [theme.breakpoints.up("sm")]: {
+  [theme.breakpoints.up("xs")]: {
+    top: "20%",
     width: "70%",
     left: "20%",
   },
+  [theme.breakpoints.up("sm")]: {
+    width: "40%",
+    left: "55%",
+  },
   [theme.breakpoints.up("md")]: {
-    width: "70%",
-    left: "50%",
+    width: "30%",
+    left: "45%",
   },
-  [theme.breakpoints.up("lg")]: {
-    width: "70%",
-    left: "60%",
-  },
+  // [theme.breakpoints.up("lg")]: {
+  //   width: "30%",
+  //   left: "40%",
+  // },
 }));
 
 const CardContainer = styled(Card)(({ theme }) => ({
@@ -50,7 +54,6 @@ const CardContainer = styled(Card)(({ theme }) => ({
   position: "relative",
   overflow: "hidden",
   cursor: "pointer",
-  position: "relative",
   "&:hover .hover-content": {
     background: "#00283a",
     width: "100%",
@@ -107,21 +110,21 @@ const ShowCaseCard = () => {
 
   return (
     <>
-      <Box>
-        <ShowCard>
-          <CardContainer onClick={handleClickOpen}>
-            <CardImage
-              className="iamge"
-              component="img"
-              image={envoyDesktop}
-              alt="project-img"
-            />
-            <HoverBox className="hover-content">
-              <Typography variant="h5">Envoy Health Care</Typography>
-            </HoverBox>
-          </CardContainer>
-        </ShowCard>
-      </Box>
+      {/* <Box> */}
+      <ShowCard>
+        <CardContainer onClick={handleClickOpen}>
+          <CardImage
+            className="iamge"
+            component="img"
+            image={envoyDesktop}
+            alt="project-img"
+          />
+          <HoverBox className="hover-content">
+            <Typography variant="h5">Envoy Health Care</Typography>
+          </HoverBox>
+        </CardContainer>
+      </ShowCard>
+      {/* </Box> */}
 
       <Modal
         BackdropComponent={(props) => (

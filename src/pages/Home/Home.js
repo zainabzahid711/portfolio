@@ -4,11 +4,13 @@ import style from "./Home.module.css";
 import CardRec from "../../components/cards/CardRec";
 import Services from "../../components/Services/Services";
 import Footer from "../../components/footer/Footer";
+import SideProfile from "../../components/sideProfile/SideProfile";
 
 function Home() {
   return (
     <>
       <div className={style.HomePage}>
+        <SideProfile top={16} />
         <HeroSec
           spanText={"Hey There!"}
           mainText=" Decoding the Digital Universe: Discover my space!"

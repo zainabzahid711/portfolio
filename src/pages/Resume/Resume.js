@@ -5,11 +5,13 @@ import Skills from "../../components/SkillSection/Skills";
 import Exprties from "../../components/Experties/Experties";
 import Project from "../../components/Projects/Project";
 import Footer from "../../components/footer/Footer";
+import SideProfile from "../../components/sideProfile/SideProfile";
 
 function Resume() {
   return (
     <>
       <div className={style.ResumeContent}>
+        <SideProfile top={7} />
         <HeroSec
           spanText={"Resume!"}
           mainText={"Discover my Skills and Project History!"}

@@ -4,10 +4,12 @@ import HeroSec from "../../components/HeroSection/HeroSec";
 import CardRec from "../../components/cards/CardRec";
 import Project from "../../components/Projects/Project";
 import Footer from "../../components/footer/Footer";
+import SideProfile from "../../components/sideProfile/SideProfile";
 
 function Experience() {
   return (
     <>
+      <SideProfile top={12} />
       <HeroSec
         spanText={"Experience!"}
         mainText=" Discover My Experience! as Projects"

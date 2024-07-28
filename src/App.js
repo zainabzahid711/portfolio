@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <NavBar />
-      <SideProfile />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Resume" element={<Resume />} />

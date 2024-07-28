@@ -6,7 +6,10 @@ import twitterLogo from "../../assets/svg/icons8-twitter.svg";
 import mailLogo from "../../assets/svg/icons8-gmail.svg";
 import gitHubLogo from "../../assets/svg/icons8-github.svg";
 
-function SideProfile() {
+function SideProfile({ top }) {
+  const sidebarStyle = {
+    top: top ? `${top}%` : "auto",
+  };
   const Text = [
     "I'M A DEVELOPER. ",
     "I'M A UI/UX DESIGNER.",
@@ -23,7 +26,7 @@ function SideProfile() {
 
   return (
     <>
-      <div className={style.sideBar}>
+      <div className={style.sideBar} style={sidebarStyle}>
         <h1 className={style.headingName}>ZAINAB ZAHID</h1>
         <p className={style.changingText}>{Text[index]}</p>
         <div className={style.contactLinks}>
