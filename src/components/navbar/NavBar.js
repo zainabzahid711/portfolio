@@ -37,6 +37,15 @@ function NavBar() {
                 Home
               </li>
             </Link>
+            <Link to="/Portfolio" onClick={scrollToTop}>
+              <li
+                onClick={() => {
+                  HideandShow();
+                }}
+              >
+                Portfolio
+              </li>
+            </Link>
             <Link to="/Resume" onClick={scrollToTop}>
               <li
                 onClick={() => {

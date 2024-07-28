@@ -1,23 +1,53 @@
 import React from "react";
-import Home from "../Home/Home";
-import NavBar from "../../components/navbar/NavBar";
-import SideProfile from "../../components/sideProfile/SideProfile";
-import Contact from "../Contact/Contact";
-import Resume from "../Resume/Resume";
-import Experience from "../Experiance/Experience";
-import { Routes, Route } from "react-router-dom";
+import { styled } from "@mui/material/styles";
+
+import { Box } from "@mui/material";
+import { Container, Grid } from "@mui/material";
+import HeroSec from "../../components/HeroSection/HeroSec";
+import ShowCaseCard from "../../components/showCaseCard/ShowCaseCard";
+
+const WorkPortfolio = styled(Box)(({ theme }) => ({
+  gap: "90px",
+  display: "flex",
+  flexDirection: "column",
+  // [theme.breakpoints.down("lg")]: {
+  //   width: 400,
+  // },
+  // [theme.breakpoints.down("md")]: {
+  //   // width: 700,
+  // },
+  // [theme.breakpoints.down("sm")]: {
+  //   // width: 300,
+  //   padding: "12px 0px 12px 0px",
+  // },
+}));
 
 function Portfolio() {
   return (
     <>
-      <NavBar />
-      <SideProfile />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Resume" element={<Resume />} />
-        <Route path="/Experience" element={<Experience />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
+      <HeroSec
+        spanText={"Explore My Work!"}
+        mainText="Discover the projects and designs that define my creative journey."
+      />
+      <WorkPortfolio>
+        <ShowCaseCard />
+      </WorkPortfolio>
+      {/* <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6} md={4}>
+            <ShowCaseCard
+              imageSrc="https://via.placeholder.com/600x400"
+              title="Sample Image 1"
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <ShowCaseCard
+              imageSrc="https://via.placeholder.com/600x400"
+              title="Sample Image 2"
+            />
+          </Grid>
+        </Grid>
+      </Container> */}
     </>
   );
 }
